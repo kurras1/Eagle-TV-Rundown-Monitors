@@ -1,0 +1,95 @@
+<?php
+include 'config.php';
+
+$conn = OpenCon();
+
+CloseCon($conn);
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Eagle TV 2.0 Rundown Builder</a>
+    </nav>
+
+    <div class="container mt-2">
+	<div class="row">
+	<div class="col-md-6">
+		<div class="card bg-light mb-3">
+			<h5 class="card-header">Show Rundown</h5>
+			<div id="sortable">
+				<div class="card-body ui-state-default">
+					<h5 class="card-title">Segment 1 <span class="badge badge-primary">1:32</span></h5>
+					<h6 class="card-subtitle mb-2 text-muted">SOT | Firstname Lastname | Desc</h6>
+				</div>
+				<div class="card-body ui-state-default">
+					<h5 class="card-title">Segment 2 <span class="badge badge-primary">0:47</span></h5>
+					<h6 class="card-subtitle mb-2 text-muted">NAT | Firstname Lastname | Desc</h6>
+				</div>
+				<div class="card-body ui-state-default">
+					<h5 class="card-title">Segment 3 <span class="badge badge-primary">1:22</span></h5>
+					<h6 class="card-subtitle mb-2 text-muted">SILENT | Firstname Lastname | Desc</h6>
+				</div>
+			</div>
+			<div class="card-footer">
+				<small class="text-muted">Last updated 3 mins ago</small>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card bg-light mb-3">
+			<h5 class="card-header">Production Timer</h5>
+			<div class="card-body">
+				<p>Test Text</p>
+				<input type="text" name="date" id="date">
+			</div>
+		</div>
+	</div>
+	</div>
+    </div><!-- /.container -->
+	
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<span class="text-muted">Place sticky footer content here.</span>
+		</div>
+	</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+	$( "#date" ).datepicker();
+  } );
+  </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  </body>
+  
+</html>

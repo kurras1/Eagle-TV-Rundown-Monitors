@@ -1,0 +1,97 @@
+html{
+	background-color: #eceeef
+}
+body{
+	background-color: #eceeef
+}
+.card-header, .modal-header{
+	background-color: #004e94;
+	color: white;
+}
+.segment-control{
+	opacity: 0.3;
+	font-size: 75%;
+}
+.segment-control:hover{
+	opacity: 1;
+}
+.card-body{
+	padding: 5px;
+}
+.segment-control-block{
+	display: inline;
+	margin-left: 10px;
+}
+.ui-state-default{
+	border-width: 1px;
+	margin: -1px;
+}
+#addSegmentButton:hover {
+	background-color: #d8d8d8;
+}
+.card-footer{
+	background-color: #e2e2e2;
+}
+#production-clock{
+	font-size: 400%;
+}
+.card-body.ui-state-default {
+	cursor: grab;
+}
+.close {
+	color: #fff;
+	opacity: 1;
+}
+.close:hover {
+	color: #aaa;
+}
+.badge-info{
+	background-color: #222;
+}
+label{
+	font-weight: bold;
+}
+small.invalid-feedback {
+	color: red;
+}
+
+@media (min-width: 800px){
+.container {
+    width: 720px;
+    max-width: 100%;
+}}
+@media (min-width: 992px){
+.container {
+    width: 720px;
+    max-width: 100%;
+}}
+@media (min-width: 768px){
+.container {
+    width: 720px;
+    max-width: 100%;
+}}
+@media (min-width: 576px){
+.container {
+    width: 540px;
+    max-width: 100%;
+}}
+@media (min-width: 1200px){
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}}
+@media (min-width: 992px){
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}}
+@media (min-width: 768px){
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}}
+@media (min-width: 576px){
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}}
